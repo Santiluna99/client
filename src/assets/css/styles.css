@@ -6,13 +6,15 @@ h2{
     color: blanchedalmond;
 }
 
-/*body{
+div{
+    background-color: rgb(164, 200, 231);
+    border: black;
+    
+}
+body{
     background-image: url(a102962040573daf804b1f55e8f6471d.gif);
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-div{
-    background-color: aliceblue;
-}
