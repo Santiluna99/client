@@ -1,7 +1,22 @@
 body{
     background-color: rgb(253, 253, 253);
+    background-image: url(a102962040573daf804b1f55e8f6471d.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: blanchedalmond;
+}
+div{
+    width: auto;
+    height: auto;
+    padding: 1%;
+    margin: 1%;
+}
+.titulo{
+    text-align: center;
+    background-color: aqua;
+    
+    
 }
