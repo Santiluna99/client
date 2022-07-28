@@ -8,7 +8,7 @@ h2{
 
 div{
     background-color: rgb(164, 200, 231);
-    border: black;
+    margin: 1%;
     
 }
 body{
@@ -17,4 +17,5 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
