@@ -14,7 +14,7 @@ export class UserService{
         this.url=GLOBAL.url;
 
     }
-    signup(user_to_login:any,gethash:any){
+    signup(user_to_login:any,gethash:any):Observable<any>{
         if(gethash!=null){
             user_to_login.gethash=gethash;
         }
@@ -24,9 +24,24 @@ export class UserService{
         return this._http.post(this.url+'login',params,{headers:headers});
         
     }
+    register(user_to_register:any):Observable<any>{
+        let params=JSON.stringify(user_to_register);
+        //let params=json;
+        let headers = new HttpHeaders().set('Content-Type', 'application/json');
+        return this._http.post(this.url+'register',params,{headers:headers});
+    }
+
+    update_user(user_to_update:any){
+        let params=JSON.stringify(user_to_update);
+        //let params=json;
+        let headers = new HttpHeaders().set('Content-Type', 'application/json')
+        .set('Authorization',this.getToken())
+        ;
+        return this._http.put(this.url+'update-user'+user_to_update._id,params,{headers:headers});
+    }
     getIdentity(){
         let identity=localStorage.getItem('identity');
-        if(identity!="undefined"){
+        if(identity="undefined"){
             this.identity=identity;
 
         }else{
