@@ -17,6 +17,7 @@ div{
 .titulo{
     text-align: center;
     background-color: aqua;
-    
+    animation-duration: 3s;
+  
     
 }
