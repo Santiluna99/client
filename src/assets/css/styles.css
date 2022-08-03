@@ -1,12 +1,16 @@
+#botones{
+    background-color: rgb(158, 241, 176);
+    border-color: rgb(30, 197, 30);
+}
 body{
     background-color: rgb(253, 253, 253);
-    background-image: url(a102962040573daf804b1f55e8f6471d.gif);
+    background-image: url(40125.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: blanchedalmond;
+    color: rgb(143, 96, 25);
 }
 div{
     width: auto;
