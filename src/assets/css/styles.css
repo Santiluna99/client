@@ -1,27 +1,48 @@
-#botones{
-    background-color: rgb(158, 241, 176);
-    border-color: rgb(30, 197, 30);
-}
-body{
+html, body{
+    margin: 0px;
+    height: 100%;
+    background: #eee;
     background-color: rgb(253, 253, 253);
-    background-image: url(40125.jpg);
+    background-image: url(zn78lp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-h2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(143, 96, 25);
+.head-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: block;
 }
-div{
-    width: auto;
-    height: auto;
-    padding: 1%;
-    margin: 1%;
-}
-.titulo{
+.navigation{
     text-align: center;
-    background-color: aqua;
-    animation-duration: 3s;
-  
-    
+    color: white;
+    background-color: #22d4bd;
+}
+.navigation a{
+    color: #ddd;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
+}
+.navigation ,glyphicon{
+    font-size: 25px;
+    display: block;
+    width: 150px; /*aca iba 100% */
+}
+#user_logged{
+    text-decoration: center;
+    background: rgb(14, 170, 118);
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px solid #444;
+    width: 150px;
+
+}
+#user_logged .glyphicon-log-out{
+    font-size: 16px;
+}
+.botonSalir{
+    cursor: pointer;
 }

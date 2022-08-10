@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import jwtDecode from 'jwt-decode';
+import {GLOBAL} from './servicios/global';
 import { AnonymousSubject } from 'rxjs/internal/Subject';
 import { User } from './models/user';
 import { UserService } from './servicios/user.service';
+
 
 @Component({
   selector: 'app-root',
@@ -19,13 +21,15 @@ export class AppComponent implements OnInit {
   public errorMessage: any;
   public user_register: any;
   public alertRegister: any;
+  public url:string;
 
 
   constructor(
     private _userService: UserService
   ) {
-    this.user = new User('', '', '', '', 'ROLE_USER', '', '');
+    this.user = new User('', '', '', 'ROLE_USER', '', '', '');
     this.user_register = new User('', '', '', 'ROLE_USER', '', '', '');
+    this.url=GLOBAL.url;
   }
   ngOnInit() {
     this.identity = this?._userService.getIdentity();
