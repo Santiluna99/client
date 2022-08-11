@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
     margin: 0px;
     height: 100%;
     background: #eee;
@@ -7,31 +8,38 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.head-title{
+
+.head-title {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 25px;
     display: block;
 }
-.navigation{
+
+.navigation {
     text-align: center;
     color: white;
     background-color: #22d4bd;
 }
-.navigation a{
+
+.navigation a {
     color: #ddd;
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
     text-decoration: none;
 }
-.navigation ,glyphicon{
+
+.navigation,
+glyphicon {
     font-size: 25px;
     display: block;
-    width: 150px; /*aca iba 100% */
+    width: 150px;
+    /*aca iba 100% */
 }
-#user_logged{
+
+#user_logged {
     text-decoration: center;
     background: rgb(14, 170, 118);
     position: absolute;
@@ -40,9 +48,14 @@ html, body{
     width: 150px;
 
 }
-#user_logged .glyphicon-log-out{
+
+#user_logged .glyphicon-log-out {
     font-size: 16px;
 }
-.botonSalir{
+
+.botonSalir {
     cursor: pointer;
+}
+.datosact{
+    margin-left: 100px;
 }
